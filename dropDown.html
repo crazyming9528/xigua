@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>Hello！西瓜</title>
+    <link rel="stylesheet" href="css/nec-reset.css">
+    <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/dropDown.css">
+</head>
+<style>
+    body {
+
+
+    }
+
+    .wrap {
+        width: 80%;
+        margin:0 auto;
+
+    }
+
+    .sm {
+        font-size: 18px;
+    }
+    .logo{
+        background-image: url("img/xigua.png");
+        background-repeat: no-repeat;
+        height: 120px;
+        background-position: center center;
+
+    }
+</style>
+<body>
+<div id="tab1" class="tab">
+    <ul class="tab-head">
+        <li>下拉框作业展示</li>
+        <li>作业说明</li>
+    </ul>
+    <div class="tab-panel-wrap">
+        <div class="tab-panel">
+            <div class="logo"></div>
+            <!--下拉框组件包裹层开始-->
+            <div class="wrap">
+
+                <!--下拉框组件 结构 开始-->
+                <div id="dw1" class="drop-down">
+                    <input class="input" placeholder="这是个可以输入的下拉框" type="text"/>
+                    <button id="drop_btn"></button>
+                    <div class="dropWrap">
+                        <ul class="drop">
+
+                            <li>四川省成都市</li>
+                            <li>四川省南充市</li>
+                            <li>重庆市</li>
+                            <li>陕西省西安市</li>
+                            <li>新疆维吾尔自治区乌鲁木齐市</li>
+                            <li>广东省广州市</li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <!--下拉框组件 结构 结束-->
+
+
+            </div>
+            <!--下拉框组件包裹层结束-->
+
+        </div>
+        <div class="tab-panel">
+            <div class="logo"></div>
+            <div class="wrap sm">
+                <h3>完成的情况：</h3>
+                <ul>
+                    <li>1.使用js大致实现了select的效果。可以直接输入文本，</li>
+                    <li>2.输入的文本与下拉框内选项的文本前缀一样的话，选项所匹配的文本会以红色显示</li>
+                    <li>3.支持主流浏览器 支持手机访问</li>
+                    <li>4.下拉选项的数据 实现了异步加载</li>
+                </ul>
+                <p style=" color:cornflowerblue;margin-top: 10px"><b>因为有ajax,请在本地服务器环境下运行项目
+                    ,,,,,在线地址：https://www.crazyming.cn/xigua</b></p>
+                <p style="color: #ed4057;font-size: 20px;margin-top: 10px">这两天刚毕业，事情比较多，作业交晚了，见谅。真心想加入贵司，给个机会
+                    我会努力的~~</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="js/tab.js"></script>
+<script src="js/dropDown.js"></script>
+<script>
+    // (function () {
+    //     var tab1 = new Tab("#tab1");
+    //     var dropdown1=new DropDown("#dw1");
+    // })()
+
+
+    $(document).ready(
+        function () {
+
+            var tab1 = new Tab("#tab1");
+            var dropdown1 = new DropDown("#dw1");
+
+
+        }
+    )
+</script>
+</body>
+</html>
